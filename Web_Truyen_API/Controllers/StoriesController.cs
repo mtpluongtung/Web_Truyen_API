@@ -25,17 +25,17 @@ namespace YourNamespace.Controllers
 			return Ok(stories);
 		}
 
-		//// GET /api/stories/{id} - Lấy thông tin chi tiết truyện.
-		//[HttpGet("{id}")]
-		//public IActionResult<Story> GetStory(int id)
-		//{
-		//	var story = stories.FirstOrDefault(s => s.Id == id);
-		//	if (story == null)
-		//	{
-		//		return NotFound();
-		//	}
-		//	return Ok(story);
-		//}
+		// GET /api/stories/{id} - Lấy thông tin chi tiết truyện.
+		[HttpGet("{id}")]
+		public IActionResult GetStory(int id)
+		{
+			//var story = _storyService.FirstOrDefault(s => s.Id == id);
+			//if (story == null)
+			//{
+			//	return NotFound();
+			//}
+			return Ok("");
+		}
 
 		//// POST /api/stories - Thêm truyện mới.
 		//[HttpPost]
